@@ -1,0 +1,24 @@
+---
+package:
+  redis:
+    installed: true
+port:
+  tcp:6379:
+    listening: true
+    ip:
+      - 0.0.0.0
+service:
+  redis:
+    enabled: true
+    running: true
+user:
+  redis:
+    exists: true
+    groups:
+      - redis
+group:
+  redis:
+    exists: true
+process:
+  redis:
+    running: true
