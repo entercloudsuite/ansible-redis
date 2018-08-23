@@ -15,4 +15,3 @@ galaxy_info:
 dependencies:
   - {role: geerlingguy.redis, version: 1.6.0}
   # List your role dependencies here, one per line.
-

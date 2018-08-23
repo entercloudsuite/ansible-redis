@@ -3,4 +3,5 @@
 - name: run the main role
   hosts: all
   roles:
-    - {role: ansible-redis}
+    - role: ansible-redis
+      redis_bind_interface: 0.0.0.0

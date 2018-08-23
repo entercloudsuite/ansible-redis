@@ -6,4 +6,6 @@
   become_user: root
   hosts: all
   roles:
-    - {role: ansible-redis}
+    - role: ansible-redis
+      redis_package: "redis-server=2:3.0.6-1"
+      redis_bind_interface: 0.0.0.0

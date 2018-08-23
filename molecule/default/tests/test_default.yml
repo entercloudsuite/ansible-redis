@@ -1,6 +1,6 @@
 ---
 package:
-  redis:
+  redis-server:
     installed: true
 port:
   tcp:6379:
@@ -20,5 +20,5 @@ group:
   redis:
     exists: true
 process:
-  redis:
+  redis-server:
     running: true
